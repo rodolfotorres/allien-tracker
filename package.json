@@ -1,0 +1,21 @@
+{
+  "name": "allien-tracker",
+  "version": "1.0.0",
+  "description": "allien tracker app",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "node_modules/.bin/mocha test/**/*.js --watch"
+  },
+  "author": "rodolfo.lage.torres@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.30",
+    "prompt": "^0.2.14",
+    "request": "^2.58.0"
+  }
+}
