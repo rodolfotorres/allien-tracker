@@ -2,6 +2,20 @@
 
 var Orientation = require('./orientation');
 
+function innerGrid(value) {
+  if (value < 0) {
+    return 0;
+  } else if (value > 9) {
+    return 9;
+  }
+  return value;
+}
+
+function fixOutOfBounds(position) {
+  position.x = innerGrid(position.x);
+  position.y = innerGrid(position.y);
+}
+
 function SpaceShip() {
   this.position = {
     x: 0,
@@ -19,22 +33,8 @@ SpaceShip.prototype.move = function move(action) {
     this.orientation.move(action);
   }
 
-  fixOutOfBounds.call(this);
+  fixOutOfBounds(this.position);
 };
-
-function fixOutOfBounds() {
-  this.position.x = innerGrid(this.position.x);
-  this.position.y = innerGrid(this.position.y);
-}
-
-function innerGrid(value) {
-  if (value < 0) {
-    return 0;
-  } else if (value > 9) {
-    return 9;
-  }
-  return value;
-}
 
 
 module.exports = SpaceShip;

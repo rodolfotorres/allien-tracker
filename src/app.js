@@ -1,7 +1,6 @@
 'use strict';
 
-var prompt = require('prompt'),
-  http = require('http');
+var prompt = require('prompt');
 
 var SpaceShip = require('./model/space-ship'),
   spaceProbe = require('./services/space-probe');

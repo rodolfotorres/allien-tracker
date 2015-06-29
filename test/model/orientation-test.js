@@ -1,9 +1,10 @@
 'use strict';
+
 var expect = require('chai').expect,
   Orientation = require('../../src/model/orientation');
 
 describe('Orientation', function() {
-  var orientation, orientation2;
+  var orientation;
   beforeEach(function () {
     orientation = Object.create(Orientation);
     orientation.build();

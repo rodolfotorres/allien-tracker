@@ -1,4 +1,5 @@
 'use strict';
+
 var expect = require('chai').expect,
   SpaceShip = require('../../src/model/space-ship');
 
