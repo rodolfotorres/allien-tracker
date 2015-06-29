@@ -5,8 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "test": "npm run lint && npm run mocha",
-    "mocha": "node_modules/.bin/mocha test/**/*.js --watch",
+    "test": "node_modules/.bin/mocha test/**/*.js --watch",
     "lint" : "node_modules/.bin/jshint src test"
   },
   "author": "rodolfo.lage.torres@gmail.com",

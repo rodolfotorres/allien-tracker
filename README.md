@@ -19,3 +19,9 @@ npm start
 ```bash
 npm test
 ```
+
+## lint
+
+```bash
+npm run lint
+```
